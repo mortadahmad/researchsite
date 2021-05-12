@@ -1,0 +1,127 @@
+*{
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+h1 {
+	margin: 0;
+	display: inline-block;
+	text-decoration: underline;
+  }
+.right {
+	float: right;
+  }
+.left {
+float: right;
+}
+div.page-wrapper{
+	width: 100%;
+	height: auto;
+}
+div.page-wrapper div.container{
+	display: flex;
+	width: 800px;
+	min-height: 600px;
+	margin: 10px auto;
+	border-radius: 8px;
+	box-shadow: 0 0px 10px rgba(0,0,0,0.7);
+	overflow: hidden;
+}
+div.page-wrapper div.container div.col1{
+	width: 40%;
+
+}
+div.page-wrapper div.container div.col1 img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+div.page-wrapper div.container div.col2{
+	width: 60%;
+	
+}
+div.page-wrapper div.container div.col2 h1{
+	padding: 20px 20px;
+}
+
+div.page-wrapper div.container div.col2 div.form-wrapper{
+	width: 98%;
+	height: auto;
+	padding: 20px;
+	margin: 10px auto;
+}
+div.page-wrapper div.container div.col2 div.form-wrapper input{
+	width: 98%;
+	padding: 10px;
+	margin: 10px auto;
+	border:none;
+	box-shadow: 0 0px 2px 2px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	font-size: 18px;
+}
+div.page-wrapper div.container div.col2 div.form-wrapper input:focus{
+	box-shadow: 0 0px 2px 2px #00b4d8;
+}
+div.page-wrapper div.container div.col2 div.form-wrapper input::placeholder{
+	color: #00b4d8;
+}
+div.page-wrapper div.container div.col2 div.form-wrapper textarea{
+	width: 98%;
+	padding: 10px;
+	resize: none;
+	margin: 10px auto;
+	border:none;
+	box-shadow: 0 0px 2px 2px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	font-size: 18px;
+}
+div.page-wrapper div.container div.col2 div.form-wrapper textarea:focus{
+	box-shadow: 0 0px 2px 2px #00b4d8;
+}
+div.page-wrapper div.container div.col2 div.form-wrapper textarea::placeholder{
+	color: #00b4d8;
+}
+
+div.page-wrapper div.container div.col2 div.form-wrapper button{
+	padding: 8px 20px;
+	font-size:20px;
+	background: #00b4d8;
+	border:none;
+	border-radius: 5px;
+	color: white;
+	margin: 20px 0;
+	cursor: pointer;
+}
+div.page-wrapper div.container div.col2 div.form-wrapper button:hover{
+	box-shadow: 0 0px 10px rgba(0,0,0,0.5);
+}
+div.page-wrapper div.container div.col2 div.form-wrapper button:active{
+	background:  #0096c7;
+}
+
+
+@media screen and (max-width: 800px)
+{
+	div.page-wrapper div.container{
+		width: 98%;
+	}
+}
+@media screen and (max-width: 600px)
+{
+	div.page-wrapper div.container{
+		width: 98%;
+		flex-wrap: wrap;
+	}
+	div.page-wrapper div.container div.col1{
+		width: 100%;
+	}
+	div.page-wrapper div.container div.col2{
+		width: 100%;		
+	}
+	div.page-wrapper div.container div.col2 div.form-wrapper{
+		width: 98%;
+	}
+}

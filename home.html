@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HomePage</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+    </head>
+    <body>
+        <header id="header">
+            <a href="index.html" class="logo"><i class="far fa-caret-square-left"> Back</i></a>
+            <ul>
+                <li><a href="#" class="active">Accueil</a></li>
+                <!-- <li><a href="#">About</a></li> -->
+                <!-- <li><a href="#">Destination</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <h2 id="text"><span>La toupie Tippe-Top </span><br>Ahmad Mortada</h2>
+            <img src="img/forest.png" id="forest">
+            <a href="#description" id="btn">lets dive into it</a>
+            <img src="img/rocks.png" id="rocks">
+            <img src="img/water.png" id="water">
+        </section>
+        <div class="sec" id="description">
+            <h2>Description:</h2>
+            <h3>Qu'est ce qu'une toupie tippe-top?</h3>
+            <p>Une toupie tippe-top est une sorte de toupie dont le corps est une sphère tronquée partiellement évidée, et elle est terminée par un manche court. La particularité de cette toupie est de se retourner pendant sa rotation. En effet, après qu’on lance la toupie en la tenant par son manche, celui-ci s'incline progressivement jusqu'à se retrouver sous le corps sphérique devenant ainsi le seul point de contact de la toupie avec le support. Elle reste en equilibre puisque son centre de masse est au dessous du centre du sphere.</p>
+            <div class="videoContainer hide-for-small-only">
+            <div class="overlay"></div>
+              <video autoplay loop muted>
+                    <source src="video/vid1.mp4" type="video/mp4">
+              </video>
+            </div>
+        </div>
+
+        <div class="sec2" id="explication">
+            <h2>Explication:</h2>
+            <h3>Comment cette toupie fonctionne?</h3>
+            <div class="box">
+                <div class="imgContainer hide-for-small-only">
+                    <div class="imgoverlay"></div>
+                      <img src="img/exp1.jpg" ALIGN="right">
+                    </div>
+                
+                <p>Contrairement aux toupies régulières, où l'axe de rotation est sur l'axe de symétrie, l'axe de rotation de la toupie tippe-top se situe toujours sur l'axe z (flèche rouge).</p>
+            </div>
+        </div>
+
+        <div class="sec3" id="explication">
+            <div class="box3">
+                <div class="imgContainer3 hide-for-small-only">
+                    <div class="imgoverlay3"></div>
+                      <img src="img/exp2.jpg" ALIGN="left">
+                    </div>
+                    <p>Comme dans le cas de la toupie classique, le tippe-top exerce une force de frottement sur la table. Cette force produit un moment de torsion (flèche vert foncé torque) décomposé en Tx et Ty et perpendiculaire à r. <br> </br> Ces vecteurs de torsion affecteront les vecteurs de moment cinétique. Ty s'oppose à Ay, donc le couple diminuera le moment cinétique le long de cet axe. Tx et Ax pointent dans la même direction, de sorte que le couple augmentera le moment cinétique dans cette direction. <br> </br>Pour que l'axe de rotation reste sur laxe de z. Et pour que les composants Ax et Ay s'additionnent sans affecter le moment cinétique total, la toupie tourne a 90°.</p>
+                </div>
+        </div>
+
+        <div class="sec4" id="explication">
+            <div class="box4">
+                <div class="imgContainer4 hide-for-small-only">
+                    <div class="imgoverlay4"></div>
+                      <img src="img/exp3.jpg" ALIGN="right">
+                    </div>
+                
+                <p>A cause des frottements, la toupie continue a tourné de telle sorte que le manche touche la table, la force de frottement provient alors du bas du manche et s'oppose à Ax. Et afin de maintenir la vitesse angulaire totale, la toupie tourne pour aligner le vecteur Ay avec l’axe de z. Donc elle continue sa rotation sur le manche.</p>
+            </div>
+        </div>
+
+        <div class="sec5" id="explication">
+            <div class="box5">
+                <div class="imgContainer5 hide-for-small-only">
+                    <div class="imgoverlay5"></div>
+                      <img src="img/exp4.jpg" ALIGN="left">
+                      <!-- <img src="img/exp5.jpg" ALIGN="right"> -->
+                    </div>
+                    <p>Enfin, l’énergie cinétique de la toupie diminue car l’énergie potentielle augmente d’après le changement d’hauteur du centre de masse. Donc pour que le renversement soit successif, l’énergie cinétique initial doit être assez large pour que quand la toupie est renversée, il peut continuer sa rotation.</p>
+                </div>
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+        
+        <script>
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let rocks = document.getElementById('rocks');
+            let forest = document.getElementById('forest');
+            let water = document.getElementById('water');
+            let header = document.getElementById('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+
+                text.style.top = 50 + value * -0.5 + '%';
+                btn.style.marginTop = value * 1.5 + 'px';
+                rocks,style.top = value * 0.12 - 'px';
+                forest.style.top = value * 0.25 + 'px';
+                header.style.top = value * -0.5 + 'px';
+            })
+            
+
+        </script>
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:mortada.ahmad@outlook.com" class="footer__link">mortada.ahmad@outlook.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/mortadahmad/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.reddit.com/user/mortadahmad" target="_blank">
+                        <i class="fab fa-reddit-alien"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/mortadahmad" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

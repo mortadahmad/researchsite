@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Introduction</title>
+        <link rel="stylesheet" type="text/css" href="css/style0.css">
+    </head>
+    <body>
+        <header id="header">
+            <a href="#" class="logo"></a>
+        </header>
+        <section>
+            <img src="img/bg.jpg" id="bg">
+            <img src="img/moon.png" id="moon">
+            <img src="img/mountain.png" id="mountain">
+            <img src="img/road.png" id="road">
+            <center><h2 id="text">Everything Happens For A Reason...</h2></center>
+        </section>
+        <section>
+        <center><h1 id="text2">...And That Reason Is Usually <strong>Physics</strong> </h1></center>
+        <center><a href="home.html"><button type="button">START</button></a></center>
+        </section>
+        <script type="text/javascript">
+            let bg = document.getElementById("bg");
+            let moon = document.getElementById("moon");
+            let mountain = document.getElementById("mountain");
+            let road = document.getElementById("road");
+            let text = document.getElementById("text");
+
+            window.addEventListener('scroll', function(){
+                var value = window.scrollY;
+
+                bg.style.top = value * 0.5 + 'px';
+                moon.style.left = -value * 0.5 + 'px';
+                mountain.style.top = -value * 0.15 + 'px';
+                road.style.top = value * 0.15 + 'px';
+                text.style.top = value * 1 + 'px';
+            })
+            
+        </script>
+        
+    </body>
+</html>
